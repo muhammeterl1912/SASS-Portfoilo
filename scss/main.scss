@@ -1,0 +1,5 @@
+@import "./abstract/mixins","./abstract/variables";
+@import "./base/reset";
+@import "./compenents/footer","./compenents/nav","./compenents/responsive.scss";
+@import "./pages/about","./pages/contact","./pages/home","./pages/project";
+
