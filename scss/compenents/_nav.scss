@@ -19,7 +19,7 @@
         font-weight: 500;
        @include transition(1s);
         &:hover{
-            color: gray;
+            color: cadetblue;
         }
         &--active{
             color:$secondary-color;
