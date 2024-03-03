@@ -1,20 +1,23 @@
-@import "./abstract/mixins","./abstract/variables";
+@import "./abstract/mixins", "./abstract/variables";
 @import "./base/reset";
-@import "./compenents/footer","./compenents/nav","./compenents/responsive.scss";
-@import "./pages/about","./pages/contact","./pages/home","./pages/project";
+@import "./compenents/footer.scss", "./compenents/nav.scss",
+  "./compenents/responsive.scss";
+@import "./pages/about", "./pages/contact", "./pages/home", "./pages/project";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
-body{
-    font-family: $font-family;
-    background-color: $primary-color;
-    color: $text-color;
-    height: 100vh;
-    line-height: 1;
+body {
+  font-family: $font-family;
+  background-color: $primary-color;
+  color: $text-color;
+  height: 100vh;
+  line-height: 1;
 }
-a{
-    color:$text-color;
-    text-decoration: none;
+a {
+  color: $text-color;
+  text-decoration: none;
 }
-h1,h2,h3{
-    font-weight: 400;
+h1,
+h2,
+h3 {
+  font-weight: 400;
 }

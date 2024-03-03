@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+.link-style a, .social-icons a, footer.horizontal a {
+  padding: 0.4rem;
+  transition: all 1s;
+}
+.link-style a:hover, .social-icons a:hover, footer.horizontal a:hover {
+  color: cadetblue;
+}
+
+footer.horizontal {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
 .nav {
   height: 10vh;
   padding: 1rem;
@@ -29,7 +45,83 @@
   color: cadetblue;
 }
 .nav__link--active {
-  color: #ff652f;
+  color: cadetblue;
+}
+
+.about-bgImg-container {
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../../img/pexels-bri-schneiter-346529.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-bgImg-container .about__bio-image {
+  text-align: center;
+}
+.about-bgImg-container .about__bio-image h2 {
+  font-size: 3rem;
+  color: cadetblue;
+}
+.about-bgImg-container .about__bio-image p {
+  font-size: 1.2rem;
+  margin: auto;
+  line-height: 1.5rem;
+  width: 70%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__container {
+  width: 70%;
+  margin: 1rem;
+  background-color: #414141;
+  padding: 1rem;
+  text-align: center;
+}
+
+.about__job {
+  text-align: center;
+  margin: 1rem;
+  background-color: #414141;
+  padding: 1rem;
+  border-bottom: 5px solid cadetblue;
+  text-align: center;
+}
+.about__job h2,
+.about__job h3 {
+  margin: 0.5rem 0;
+}
+.about__job h6 {
+  margin: 3rem 0;
+}
+
+footer.vertical {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 1rem;
+}
+
+.copyright {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  writing-mode: vertical-lr;
 }
 
 .home-bgImg-container {
@@ -74,7 +166,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
 }
 
