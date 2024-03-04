@@ -1,0 +1,39 @@
+@include media-md {
+    .contact {
+      & h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      &__list {
+        gap: 2.5rem 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  @include media-lg {
+    .contact {  
+      & h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      &__list {
+        gap: 2.5rem 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  @include media-xl {
+    .contact {
+      & h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      &__list {
+        gap: 2.5rem 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  } 
+      

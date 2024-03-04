@@ -1,8 +1,8 @@
 @import "./abstract/mixins", "./abstract/variables";
 @import "./base/reset";
+@import "./pages/about", "./pages/contact", "./pages/home";
 @import "./compenents/footer.scss", "./compenents/nav.scss",
   "./compenents/responsive.scss";
-@import "./pages/about", "./pages/contact", "./pages/home";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 body {
@@ -21,7 +21,7 @@ h2,
 h3 {
   font-weight: 400;
 }
-.copyright{
+.copyright {
   position: fixed;
   right: 1rem;
   padding: 1rem;
