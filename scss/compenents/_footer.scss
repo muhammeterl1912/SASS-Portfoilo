@@ -4,7 +4,6 @@
     @include transition(1s);
     &:hover {
       color: $secondary-color;
-  
     }
   }
 }
@@ -16,4 +15,15 @@ footer.horizontal {
   align-items: flex-end;
   padding: 1rem;
   @extend .link-style;
+}
+footer.vertical{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem;
+}
+footer.middle{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
 }

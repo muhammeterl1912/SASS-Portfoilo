@@ -1,28 +1,30 @@
-.nav{
-    height: 10vh;
+.nav {
+  height: 10vh;
+  padding: 1rem;
+  &__list {
+    text-align: right;
+    list-style-type: none;
+  }
+  &__item {
+    display: inline;
     padding: 1rem;
-    &__list{
-        text-align: right;
-        list-style-type: none;
-        
+  }
+  &__link {
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: $font-family;
+    font-weight: 500;
+    @include transition(1s);
+    &:hover {
+      color: $secondary-color;
     }
-    &__item{
-        display: inline;
-        padding: 1rem;
-        
+    &--active {
+      color: $secondary-color;
     }
-    &__link{
-        text-transform: uppercase;
-        font-size: 1rem;
-        text-decoration: none;
-        font-family:$font-family;
-        font-weight: 500;
-       @include transition(1s);
-        &:hover{
-            color: $secondary-color;
-        }
-        &--active{
-            color:$secondary-color;
-        }
-    }
+  }
+}
+.nav-contact {
+  height: 40vh;
+  padding-top: 1rem;
 }

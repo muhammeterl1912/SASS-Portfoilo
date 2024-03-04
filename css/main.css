@@ -21,6 +21,19 @@ footer.horizontal {
   padding: 1rem;
 }
 
+footer.vertical {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem;
+}
+
+footer.middle {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .nav {
   height: 10vh;
   padding: 1rem;
@@ -46,6 +59,11 @@ footer.horizontal {
 }
 .nav__link--active {
   color: cadetblue;
+}
+
+.nav-contact {
+  height: 40vh;
+  padding-top: 1rem;
 }
 
 .about-bgImg-container {
@@ -103,25 +121,63 @@ footer.horizontal {
   margin: 3rem 0;
 }
 
-footer.vertical {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 2rem;
-}
-
 .social-icons {
   display: flex;
   flex-direction: column;
   position: fixed;
   bottom: 1rem;
 }
+.social-icons .fa-2x {
+  transition: all 1s;
+}
+.social-icons .fa-2x:hover {
+  transform: scale(1.2);
+}
 
-.copyright {
+.copyright-about {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
   writing-mode: vertical-lr;
+}
+
+.copyright-contact {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.contact-bgImg-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../../img/contact.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 3rem;
+  margin: 2rem;
+}
+.contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 2rem;
+}
+.contact .text-secondary {
+  color: #fff;
+  margin-top: 1rem;
 }
 
 .home-bgImg-container {
@@ -170,6 +226,12 @@ h1,
 h2,
 h3 {
   font-weight: 400;
+}
+
+.copyright {
+  position: fixed;
+  right: 1rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
